@@ -1,7 +1,7 @@
-version: '3'
+version: "3"
 services:
   postgres:
-    image: "postgres"
+    image: postgres:14.1-alpine
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
@@ -14,7 +14,7 @@ services:
   pgadmin-compose:
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: "gui@alura.com"
+      PGADMIN_DEFAULT_EMAIL: "netodamasceno12@gmail.com"
       PGADMIN_DEFAULT_PASSWORD: "123456"
     ports:
       - "54321:80"
